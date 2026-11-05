@@ -1,6 +1,4 @@
-# Pranav Maturi — ECE 1100 ePortfolio (Final Published Version)
-
-Static GitHub Pages site. Upload **index.html**, **style.css**, **script.js**, **README.md**, and the complete **assets/** folder to the root of `Pranav-M-123.github.io` on `main`.
+# Pranav Maturi — ECE 1100 ePortfolio
 
 ## ECE 1100 content
 - Welcome / introduction
