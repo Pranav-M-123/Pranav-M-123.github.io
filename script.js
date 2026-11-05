@@ -1,0 +1,8 @@
+const menuButton=document.querySelector('.menu-toggle');
+const menu=document.querySelector('.nav-links');
+menuButton?.addEventListener('click',()=>{const expanded=menuButton.getAttribute('aria-expanded')==='true';menuButton.setAttribute('aria-expanded',String(!expanded));menuButton.setAttribute('aria-label',expanded?'Open navigation':'Close navigation');menu.classList.toggle('open',!expanded)});
+menu?.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{menu.classList.remove('open');menuButton?.setAttribute('aria-expanded','false');menuButton?.setAttribute('aria-label','Open navigation')}));
+const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(!reduced&&'IntersectionObserver'in window){const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}})},{threshold:.09,rootMargin:'0px 0px -35px 0px'});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el))}else{document.querySelectorAll('.reveal').forEach(el=>el.classList.add('visible'))}
+const navLinks=[...document.querySelectorAll('.nav-links a[href^="#"]')];if('IntersectionObserver'in window){const sections=[...document.querySelectorAll('main section[id], footer[id]')];const sectionObserver=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){navLinks.forEach(link=>link.classList.toggle('active',link.getAttribute('href')==='#'+entry.target.id))}})},{rootMargin:'-25% 0px -65% 0px'});sections.forEach(s=>sectionObserver.observe(s))}
+document.querySelector('#year').textContent=new Date().getFullYear();
