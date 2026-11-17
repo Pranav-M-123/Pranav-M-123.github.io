@@ -15,3 +15,41 @@ html{scroll-padding-top:75px}body{background:#05070c;line-height:1.65;-webkit-fo
 .academic-plan-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.plan-card{border:1px solid #34445b;background:linear-gradient(155deg,#142033,#0d1726);border-radius:16px;padding:27px 24px}.plan-card h4{font:700 21px/1.3 var(--display);letter-spacing:-.5px;margin:16px 0}.plan-card p{font-size:14px;color:#b7c7d9;line-height:1.8}.plan-card strong{color:#f1f6ff}.plan-card .plan-outcome{border-top:1px solid #34445b;padding-top:16px;color:#8ce8ff}.academic-disclaimer{color:#9baec2;font-size:12px;margin-top:16px}
 @media(max-width:900px){.academic-plan-grid{grid-template-columns:1fr}.plan-card{padding:26px}.demo-link{margin-left:0;margin-right:20px}}
 @media(max-width:540px){.education-snapshot{padding:21px}.academic-plan{margin-top:35px}.demo-link{display:table;margin:17px 0 0}}
+
+
+/* Personal revision: editorial layout, original photos, calmer motion */
+:root{--bg:#0b111b;--bg2:#111b28;--surface:#172334;--muted:#b2c0cf}
+body{font-family:Inter,system-ui,-apple-system,sans-serif;line-height:1.7}
+h1,h2,h3{font-family:Inter,system-ui,sans-serif;letter-spacing:-.045em}
+.hero{min-height:700px;grid-template-columns:1.1fr .72fr;gap:clamp(32px,5vw,90px);padding-top:88px;padding-bottom:105px}
+.hero h1{font-size:clamp(44px,5.3vw,76px);line-height:1.13;letter-spacing:-.055em}
+.hero-photo{margin:0;position:relative;border-radius:20px;overflow:hidden;background:#19212e;border:1px solid #354252;box-shadow:0 25px 80px #0005}
+.hero-photo img{display:block;width:100%;height:510px;object-fit:cover;object-position:center 26%;filter:saturate(.94)}
+.hero-photo figcaption{display:flex;justify-content:space-between;gap:12px;padding:15px 20px;font:10px var(--mono);letter-spacing:.8px;color:#cbd8e8;background:#131d2b}
+.hero-photo figcaption span:last-child{color:#8db0bf}
+.hero-lead{max-width:600px;font-size:17px}
+.hero-meta{border-top:1px solid var(--line);padding-top:24px}
+.about-layout{grid-template-columns:1.25fr .75fr;gap:clamp(30px,6vw,95px)}
+.about-story p{line-height:1.85}
+.about-story .large-copy{font-size:20px}
+.photo-card{margin:0;border-radius:15px;overflow:hidden;border:1px solid #34455b;background:#142031}
+.photo-card img{display:block;width:100%;height:430px;object-fit:cover;object-position:center 38%}
+.photo-card figcaption{padding:13px 18px;font-size:12px;line-height:1.6;color:#b5c6d8}
+.photo-interlude{background:#101c2a;border-block:1px solid #27364b;padding:75px 0}
+.interlude-layout{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,7vw,110px);align-items:center}
+.interlude-layout h2{max-width:500px}.interlude-layout p:not(.eyebrow){max-width:520px;color:#bac9d9;font-size:16px}
+.interlude-layout figure{margin:0;border-radius:14px;overflow:hidden;background:#1a2839}
+.interlude-layout img{width:100%;height:365px;object-fit:cover;object-position:center 48%;display:block}
+.interlude-layout figcaption{font-size:12px;color:#a6b7ca;padding:12px 18px}
+.section{padding-top:95px;padding-bottom:95px}
+.section-heading{margin-bottom:42px}
+.project-list{gap:80px}.feature-project{gap:50px}.project-info h3{font-size:clamp(27px,3vw,35px)}
+.project-art{position:relative}.diagram-caption{display:block;padding:10px 15px;font-size:11px;color:#a8c1d1;background:#101c2a;border-top:1px solid #2a4052}
+.evidence-note{padding:17px 19px;border-left:3px solid var(--cyan);background:#112638;border-radius:0 8px 8px 0;margin:20px 0}
+.evidence-note strong{font-size:13px;color:#e3f6fa}.evidence-note p{margin:5px 0 0!important;font-size:13px!important}
+.goal-grid{gap:16px}.goal-card{padding:25px}.goal-card p{line-height:1.8}
+.nav-links{gap:20px}.nav-links a{font-size:12px}
+.reveal{transition:opacity .7s ease,transform .7s ease}
+@media(max-width:900px){.hero{grid-template-columns:1fr;min-height:0;padding-top:65px}.hero-photo{max-width:500px}.hero-photo img{height:440px}.about-layout,.interlude-layout{grid-template-columns:1fr}.photo-card{max-width:460px}.interlude-layout figure{max-width:650px}.interlude-layout img{height:360px}}
+@media(max-width:600px){.shell{width:min(100% - 36px,1160px)}.hero h1{font-size:clamp(40px,11vw,56px)}.hero-photo img{height:390px}.hero-photo figcaption{font-size:9px}.photo-card img{height:360px}.interlude-layout img{height:300px}.section{padding-top:75px;padding-bottom:75px}.project-list{gap:65px}}
+@media(prefers-reduced-motion:reduce){.reveal,.hero-photo,.button,.project-art{transition:none!important;animation:none!important}}
