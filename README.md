@@ -1,18 +1,37 @@
-# Pranav Maturi — personal ePortfolio (ECE 1100 revision)
+# Pranav Maturi | Engineering Portfolio
 
-A personal, static GitHub Pages portfolio with original photographs and a more concise first-person narrative.
+A personal portfolio showcasing my work and growth as a Computer Engineering student at the Georgia Institute of Technology. The website brings together hardware design, software development, research, teaching, and the experiences that shape my approach to engineering.
 
-## Publishing
-Upload the contents of this ZIP to the root of `Pranav-M-123.github.io` on `main`. Replace `index.html`, `style.css`, `script.js`, and `README.md`; upload the **entire `assets/` folder**, including the three new `.webp` photos. Confirm that the published page loads and that the resume opens.
+**Live website:** https://pranav-m-123.github.io/
 
-## Important personal proofreading
-- Review all first-person statements and rewrite anything that does not sound like you or accurately describe your experience.
-- The graduation photos are captioned as *before Georgia Tech*, not as Georgia Tech graduation photos.
-- Add **your own** SiliconJackets SimVision/Innovus screenshots to the RISC-V section when available. Do not share confidential team material.
-- Discovery Project Feature is intentionally pending, as permitted by the published ePortfolio assignment.
-- Check links, mobile layout, and external accessibility in a private window.
+## About the website
 
-## Attribution
-All three personal photographs were supplied by the site owner. The technical SVGs are explanatory illustrations, not screenshots of completed work.
+I built this portfolio to document more than finished project titles. Each section explains what I worked on, what I learned, and how those experiences inform my goals. The design uses a dark, editorial visual style with clear navigation, responsive layouts, and personal photographs alongside project visuals.
 
-SiliconJackets evidence: assets/siliconjackets-physical-design.webp is extracted from the user's own SiliconJacketsSubmission.pdf (Part 6, page 32). This is an onboarding result with DRC violations, not a fabrication-ready design.
+## Featured work
+
+- **SiliconJackets — RISC-V and physical design:** Digital design onboarding in SystemVerilog and exploration of a physical-design flow using Cadence tools. The included physical-layout image is from an onboarding submission and documents design-rule-check results, not a fabrication-ready chip.
+- **Smart Microblog:** A Flask-based web application using a database, interactive updates, and sentiment analysis.
+- **Community Appointment Scheduler:** A full-stack scheduling application with database-backed student and instructor views.
+- **EcoCAR CAV research:** Learning and contributing within the connected and automated vehicle research environment.
+
+## Sections
+
+- **About:** My background, interests, and perspective on engineering.
+- **Experience:** Technical and community experiences, including tutoring and accessibility work.
+- **Projects:** Selected hardware and software work with context and visuals.
+- **Career goals:** Areas I hope to explore and an evolving academic roadmap.
+- **Resume:** A PDF copy of my resume.
+
+## Design and technology
+
+The site is a static website written in HTML, CSS, and JavaScript. It includes mobile-friendly navigation, semantic sections, accessible image descriptions, and reduced-motion support. It is hosted on GitHub Pages.
+
+## Visuals and project context
+
+Personal photographs are from before my time at Georgia Tech. The SiliconJackets image comes from my own onboarding submission. Other SVG illustrations are explanatory graphics rather than screenshots of completed software. Project descriptions reflect work and learning at different stages of development.
+
+## Contact
+
+- [GitHub](https://github.com/Pranav-M-123)
+- [LinkedIn](https://www.linkedin.com/in/pranav-maturi-b11494286/)
